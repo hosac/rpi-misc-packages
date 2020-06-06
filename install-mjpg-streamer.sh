@@ -14,7 +14,7 @@ if [[ $(id -u) -ne 0 ]] ; then echo "Please run as root" ; exit 1 ; fi
 echo "Installing MJPG-Streamer"
 
 # Install dependencies
-sudo apt-get -y install cmake libjpeg8-dev gcc g++
+sudo apt-get -y install cmake libjpeg8-dev gcc g++ git
 
 # Clone and build
 git clone https://github.com/jacksonliam/mjpg-streamer.git
